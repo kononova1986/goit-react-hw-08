@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { changeFilter, selectValueInput } from '../../redux/filtersSlice';
+import { changeFilter } from '../../redux/filters/slice';
+import { selectValueInput } from '../../redux/filters/selectors';
 import css from './SearchBox.module.css';
 
 export default function SearchBox() {
@@ -10,7 +11,7 @@ export default function SearchBox() {
     dispatch(changeFilter(e.target.value));
   };
   return (
-    <div>
+    <div className={css.wrapSearch}>
       <p>Find contacts by name</p>
       <input
         type="text"
