@@ -6,7 +6,7 @@ export default function HomePage() {
     <div className={css.wrapHomePage}>
       <div className={css.wrapHomePageTitle}>
         <h1>Phonebook welcome page</h1>
-        <FaRegAddressBook size={80} />
+        <FaRegAddressBook size={80} className={css.icon} />
       </div>
     </div>
   );

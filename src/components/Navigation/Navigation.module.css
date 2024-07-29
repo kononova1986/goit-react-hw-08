@@ -18,3 +18,8 @@
     background-color: #646cff;
     color: white;
 }
+.link :hover {
+    border-color: #1e26c4;
+    background-color: #646cff;
+    color: white;
+}
